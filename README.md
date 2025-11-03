@@ -1,45 +1,47 @@
-# Validación de Hardware: Regulador Reductor (Buck Converter)
+# Electrónica de Potencia: Validación de Convertidores DC/DC (Buck & Boost)
 
-**Estado del Proyecto:** Simulación y validación experimental. Este repositorio contiene el informe técnico completo, dividido en dos partes.
+**Estado del Proyecto:** Simulación, Análisis Teórico y Validación de Hardware completados en las topologías Buck y Boost.
 
 ---
 
 ## 1. Resumen del Proyecto
 
-Este proyecto documenta el proceso completo de validación de un circuito de **electrónica de potencia**, comparando la **simulación teórica** contra la **medición en hardware**.
+Este repositorio consolida la experiencia en el diseño y validación de **Convertidores DC/DC** utilizando simulación y pruebas en hardware. El objetivo es demostrar el dominio en el control y análisis de topologías de potencia esenciales:
 
-El circuito analizado es un **Regulador Reductor (Buck Converter)**. El estudio se enfocó en:
-1.  **Principios de Operación:** Análisis de la topología Buck y los circuitos auxiliares clave (opto driver, fuente aislada) necesarios para un control confiable.
-2.  **Validación de Potencia:** Implementación y comprobación de la conmutación de un **MOSFET de potencia** de alto voltaje (IRFP460A) utilizando una señal de control PWM y verificando la consistencia de los resultados con instrumentación de laboratorio.
+1.  **Regulador Reductor (Buck Converter):** Validación de hardware, enfocada en la conmutación real de MOSFETs de potencia y la medición de circuitos auxiliares (opto driver).
+2.  **Regulador Elevador (Boost Converter):** Simulación teórica para el cálculo de rizado de corriente (ΔIL) y voltaje (ΔVo), y análisis del principio de operación.
 
-El objetivo es demostrar la capacidad de transicionar del diseño conceptual al prototipado y la medición de señales de conmutación de potencia.
+Este enfoque dual (teoría/simulación + validación/hardware) es un punto de venta muy fuerte para roles de Ingeniería de Pruebas y Aplicaciones.
 
-### ➡️ Informes Técnicos Completos (Parte 1 y Parte 2)
+---
 
-El proyecto está documentado en dos reportes que cubren la teoría, la implementación y los resultados experimentales:
+## 2. Documentación Técnica (3 Informes)
+
+El proyecto está documentado en tres informes técnicos que cubren la teoría, la simulación PSIM y los resultados experimentales:
+
+### A. Validación de Hardware del Regulador Buck (Práctica)
 
 * **Parte 1: Principio de operación del regulador reductor (parte 1)**
     * [Ver Reporte Parte 1](./250324_341838_JARH_T07.pdf)
 * **Parte 2: Principio de operación del regulador reductor (parte 2)**
     * [Ver Reporte Parte 2](./250330_341838_JARH_T08.pdf)
 
+### B. Análisis Teórico y Simulación Buck/Boost (Teoría)
+
+* **Regulador Reductor y Elevador (Simulación PSIM)**
+    * **[Ver Reporte Tarea 3 (PSIM)](./250216_341838_JA_T03.pdf)**
+
 ---
-
-## 2. Herramientas y Metodología
-
-* **Software de Simulación:** PSIM
-* **Hardware e Instrumentación:**
-    * MOSFET de Potencia (IRFP460A)
-    * Instrumentación: **Osciloscopio**, Multímetro, Fuente de Alimentación DC.
-    * Control: Señal PWM generada externamente (via DSP).
-
-El proceso clave fue la **validación de la conmutación de alto voltaje** en el MOSFET, comprobando el funcionamiento de los circuitos auxiliares y midiendo las formas de onda críticas para asegurar la operación correcta del convertidor.
 
 ## 3. Competencias Demostradas
 
-* **Análisis de Sistemas de Potencia:** Comprensión profunda de la topología Buck.
-* **Validación de Hardware:** Experiencia práctica en el montaje de circuitos de potencia y en la medición de señales de conmutación.
-* **Uso de Instrumentación:** Dominio en la configuración y uso de Osciloscopios y Multímetros para la caracterización de circuitos.
-* **Análisis Documental:** Capacidad para generar documentación técnica detallada (informes en PDF) que respalden el trabajo de ingeniería.
+* **Simulación de Potencia:** Uso de **PSIM** para modelar topologías Buck y Boost, y análisis de formas de onda (ripple) en corriente y voltaje.
+* **Validación de Hardware:** Experiencia práctica en el montaje de circuitos de potencia, accionamiento de **MOSFETs de alto voltaje** (IRFP460A) y comprobación del circuito de control.
+* **Instrumentación:** Dominio en la medición de señales de conmutación de alta velocidad utilizando el **Osciloscopio** y análisis de resultados contra la teoría.
+* **Análisis Documental:** Capacidad para generar documentación técnica detallada que respalde el trabajo de ingeniería.
 
----
+**(Imagen de Simulación PSIM Buck/Boost)**
+![Gráfico de Voltaje y Corriente en PSIM](Docs/PSIM_Buck_Boost_Sim.png)
+
+**(Imagen de Validación en Laboratorio Buck Converter)**
+![Medición de Conmutación de MOSFET en Osciloscopio](Docs/Osciloscopio_Buck.png)
