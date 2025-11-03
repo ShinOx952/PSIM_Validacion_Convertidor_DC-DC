@@ -2,10 +2,8 @@
 
 **Estado del Proyecto:** Simulación, Análisis Teórico y Validación de Hardware completados en las topologías Buck y Boost.
 <div align="center">
-    
-    <img src="./Img/Convertidor_Boost.png" alt="Convertidor Boost" style="width: 49%; display: inline-block; margin: 5px;">
-    <img src="./Img/Convertidor_Buck.png" alt="Convertidor_Buck" style="width: 49%; display: inline-block; margin: 5px;">
-
+    <img src="./Img/Convertidor_Boost.png" alt="Convertidor Boost" style="width: 49%; display: inline-block; margin-right: 2%;">
+    <img src="./Img/Convertidor_Buck.png" alt="Convertidor Buck" style="width: 49%; display: inline-block; margin-left: 2%;">
 </div>
 
 ---
