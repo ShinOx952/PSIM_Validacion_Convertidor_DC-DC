@@ -42,10 +42,4 @@ El proceso clave fue la **validación de la conmutación de alto voltaje** en el
 * **Uso de Instrumentación:** Dominio en la configuración y uso de Osciloscopios y Multímetros para la caracterización de circuitos.
 * **Análisis Documental:** Capacidad para generar documentación técnica detallada (informes en PDF) que respalden el trabajo de ingeniería.
 
-**(Imagen de Simulación PSIM)**
-![Simulación del Buck Converter en PSIM](ENLACE_A_SU_IMAGEN.png)
-
-**(Imagen de Validación en Laboratorio)**
-![Validación del hardware con multímetro](ENLACE_A_SU_IMAGEN.png)
-
 ---
